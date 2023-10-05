@@ -3,14 +3,7 @@ export const BoardRow = ({ rowNumbers, winArray }) => {
     <>
       {rowNumbers.map((row) => {
         return (
-          <td
-            className={
-              rowNumbers.every((element) => winArray.includes(element))
-                ? "py-3 text-center w-10 bg-red-500"
-                : "py-3 text-center w-10"
-            }
-            key={row}
-          >
+          <td className="py-3 text-center w-10" key={row}>
             <span
               className={
                 winArray.includes(row)
